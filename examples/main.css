@@ -198,8 +198,40 @@ max-width: 30vw;
 			  width: 100vw;
 		  }
 
+
+
+.abbo, .abbo2 {
+	padding: 4vw;
+	background-color: white;
+	transition: 0.2s;
+}
+
+.abbo2 {
+	background-color: rgb(235, 232, 232);
+}
+
+.abbo2:hover, .abbo:hover {
+	background-color: rgb(241, 255, 236);
+	transform: scale(1.05);
+}
+
+.abbo .img1, .img3 {
+	max-width: 10vw;
+	float: left;
+	margin-top: -17vh;
+}
+
+.abbo2 .img2 {
+	max-width: 10vw;
+	float: right;
+	margin-top: -17vh;
+}
+
 #properties {
-	width:100%;
+	width:90vw;
+	margin: 5vw;
+	margin-top: -100px;
+
 	height:100%;
 	padding-top:10%;
 	text-align:center;
@@ -310,6 +342,10 @@ max-width: 30vw;
 		position: absolute;
 		left: 39%;
 		font-size: 50px;
+	}
+
+	#properties {
+		margin-top: 10vh;
 	}
 
 	}
