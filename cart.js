@@ -62,14 +62,14 @@ var cart = {
 
       // PRODUCT PRICE
       part = document.createElement("div");
-      part.innerHTML = "$" + p.price;
+      part.innerHTML = "p/m €" + p.price;
       part.className = "p-price";
       item.appendChild(part);
 
       // ADD TO CART
       part = document.createElement("input");
       part.type = "button";
-      part.value = "Add to Cart";
+      part.value = "Toevoegen";
       part.className = "cart p-add";
       part.onclick = cart.add;
       part.dataset.id = id;
@@ -96,7 +96,7 @@ var cart = {
     // (D2) CART IS EMPTY
     if (empty) {
       item = document.createElement("div");
-      item.innerHTML = "Cart is empty";
+      item.innerHTML = "Wagentje leeg";
       cart.hItems.appendChild(item);
     }
 
@@ -142,7 +142,7 @@ var cart = {
       // EMPTY BUTTONS
       item = document.createElement("input");
       item.type = "button";
-      item.value = "Empty";
+      item.value = "Leeg maken";
       item.addEventListener("click", cart.nuke);
       item.className = "c-empty cart";
       cart.hItems.appendChild(item);
@@ -150,7 +150,7 @@ var cart = {
       // CHECKOUT BUTTONS
       item = document.createElement("input");
       item.type = "button";
-      item.value = "Checkout - " + "$" + total;
+      item.value = "Verder" + "\n" + "Prijs p/m - " + "€" + total;
       item.addEventListener("click", cart.checkout);
       item.className = "c-checkout cart";
       cart.hItems.appendChild(item);

@@ -18,7 +18,7 @@
 		<a href="#home">Home</a>
 		<a href="#news">Winkelmantje</a>
 		<a href="#contact">Contact</a>
-		<button onclick="myFunction()"><i  class="fas fa-shopping-cart"></i></button>
+		<button onclick="winkelwagen()"><i  class="fas fa-shopping-cart"></i></button>
 	
 		<div id="myDIV">
 			<div id="cart-items"></div>
@@ -41,7 +41,7 @@
 	</div>
 
 	<div id="transform" data-500="transform:scale(0) rotate(0deg);" data-1000="transform:scale(0.8) rotate(0deg);opacity:1;" data-1600="" data-1700="transform:scale(3) rotate(0deg);opacity:0;">
-		<h2>product</h2>
+		<h2>Kies de soort plant die je per maand wil ontvangen</h2>
 
     <!-- (A) CSS + JS -->
     <link rel="stylesheet" href="cart.css">
@@ -113,7 +113,7 @@
 		}
 	});
 
-	function myFunction() {
+	function winkelwagen() {
   var x = document.getElementById("myDIV");
   if (x.style.display === "none") {
     x.style.display = "block";

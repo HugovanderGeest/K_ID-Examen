@@ -35,5 +35,23 @@ var products = {
     desc : "beschrijving",
     img : "logo.png",
     price : 111
-  }
+  },
+  129: {
+    name : "Plant ",
+    desc : "beschrijving",
+    img : "logo.png",
+    price : 111
+  },
+  130: {
+    name : "Plant ",
+    desc : "beschrijving",
+    img : "logo.png",
+    price : 111
+  },
+  131: {
+    name : "Plant ",
+    desc : "beschrijving",
+    img : "logo.png",
+    price : 111
+  },
 };
