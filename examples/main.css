@@ -159,9 +159,8 @@ margin-top: 5vh;
 }
 
 #transform {
-	top: 10%;
 	text-align:center;
-	font-size:150%;
+	font-size:130%;
 }
 
 
@@ -196,7 +195,7 @@ margin-top: 5vh;
 	
 		  .row {
 			  margin-top: -30px;
-			  width: 100vw;
+			  width: 200vw;
 		  }
 
 
