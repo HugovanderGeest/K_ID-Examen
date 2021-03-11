@@ -110,17 +110,17 @@ h4 {
 	left:0;
 	width:100%;
 	height:100%;
-	background:url(images/bubbles.png) repeat 0 0;
+	background:url(../images/bubbles.png) repeat 0 0;
 }
 
 #bg2 {
 	z-index:49;
-	background-image:url(images/bubbles2.png);
+	background-image:url(../images/bubbles2.png);
 }
 
 #bg3 {
 	z-index:48;
-	background-image:url(images/bubbles3.png);
+	background-image:url(../images/bubbles3.png);
 }
 
 #intro {
@@ -140,7 +140,6 @@ h4 {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -159,7 +158,7 @@ h4 {
 
 #intro img {
 max-width: 20vw;
-margin-top: 15vh;
+margin-top: 5vh;
 }
 
 #transform {
@@ -213,13 +212,16 @@ margin-top: 15vh;
 	padding: 3vw;
 	background-color: white;
 	transition: 0.2s;
-	overflow: hidden;
 }
 
 .abbo2 {
 	background-color: rgb(235, 232, 232);
 }
 
+.abbo2:hover, .abbo:hover {
+	background-color: rgb(241, 255, 236);
+	transform: scale(1.05);
+}
 
 .abbo .img1, .img3 {
 	max-width: 6vw;
@@ -247,7 +249,10 @@ margin-top: 15vh;
 	box-sizing: border-box;
 }
 
-
+#easing_wrapper {
+	width:100%;
+	height:100%;
+}
 
 #easing {
 	top:10%;
@@ -303,10 +308,6 @@ margin-top: 15vh;
 	z-index: 999;
   }
   
-.hidde {
-	overflow: hidden;
-}
-
   .navbar a, i {
 	float: left;
 	display: block;
@@ -327,59 +328,19 @@ margin-top: 15vh;
 	  float: right;
 	  font-size: 20px;
 	  transition: 0.3s;
-	  color: white;
   }
 
-  .nav-card {
-	  position: absolute;
-	  right: 0px;
-	  border: 1px transparent solid;
-	  background-color: 	#d64107;
-	  color: white;
-	  transition: 0.2s;
-  }
-
-  .plus {
-	position: absolute;
-	right: 0px;
-	border: 1px transparent solid;
-	background-color: #d64107;
-	color: white;
-	transition: 0.2s;
-	padding: 10vh 25px;
-	z-index: 999;
-	transition: 0.2s;
-  }
-
-  .plus2 {
-	left: 0px !important;
-	position: absolute;
-	border: 1px transparent solid;
-	background-color: #d64107;
-	color: white;
-	transition: 0.2s;
-	padding: 10vh 25px;
-	transition: 0.2s;
-	
-  }
-
-  .plus:hover, .plus2:hover {
-right: 0px;
-left: 0px;
-  }
-
-  .nav-card:hover {
-	  background-color: #84a678;
-	  cursor: pointer;
+  .navbar i:hover {
+	  color: rgb(241, 255, 236) ;
+	  background-color: #ddd;
+	  transform: scale(1.1);
   }
   
-  input.cart:hover, button.cart:hover {
-	  background-color: #84a678;
-	  cursor: pointer;
-  }
+  .navbar a:hover {
+	background: #ddd;
+	color: black;
+	transform: scale(1.1);
 
-  input.cart, button.cart {
-	  transition: 0.2s;
   }
 
 
