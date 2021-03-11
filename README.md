@@ -7,7 +7,7 @@
 
 ### inspieratie: 
 #### Apple: https://www.apple.com/airpods-pro/ 
-#### Boldking: shorturl.at/hmrtN 
+#### Boldking: https://www.boldking.com/nl/nl-nl
 #### Netflix: https://www.netflix.com/nl/ 
 #### Goodiebox: https://www.goodiebox.nl/
 #### lees-cadeaukaart:  https://www.lees-cadeaukaart.nl/
