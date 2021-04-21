@@ -44,6 +44,11 @@ input.cart, button.cart {
   transform: rotate(45deg);
 }
 
+.navbar button i {
+  transform: rotate(-45deg);
+
+}
+
 .glow-on-hover:hover {
   transform: scale(1.05);
   color: white;

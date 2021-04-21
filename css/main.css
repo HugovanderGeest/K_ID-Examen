@@ -312,12 +312,13 @@ margin-top: 5vh;
   .navbar a, i {
 	float: left;
 	display: block;
-	color: black;
+	color: #d64107;
 	text-align: center;
 	padding: 24px 16px;
 	text-decoration: none;
-	font-size: 17px;
+	font-size: 30px;
 	transition: 0.3s;
+	font-weight: bold;
   }
 
   .maxw {
@@ -327,14 +328,15 @@ margin-top: 5vh;
 
   .navbar i {
 	  float: right;
-	  font-size: 20px;
+	  font-size: 25px;
 	  transition: 0.3s;
+	  color: white;
+
   }
 
   .navbar i:hover {
-	  color: rgb(241, 255, 236) ;
-	  background-color: #ddd;
 	  transform: scale(1.1);
+	  color: white;
   }
   
   .navbar a:hover {
@@ -342,6 +344,46 @@ margin-top: 5vh;
 	color: black;
 	transform: scale(1.1);
 
+  }
+
+  .downer {
+	position: absolute;
+	background-color: #d64107;
+	padding: 10px;
+	border-radius: 50px;
+	text-align: center;
+	border: 5px solid white;
+	
+  }
+
+  .collapsible {
+	background-color: #d64107;
+	color: white;
+	cursor: pointer;
+	padding: 40px;
+	width: 45%;
+	border: none;
+	outline: none;
+	font-size: 15px;
+	text-align: center;
+	border-radius: 20px;
+	transition: 0.2s;
+	font-size: 30px;
+	margin-top: 30px;
+  }
+  
+  .active, .collapsible:hover {
+	background-color: #555;
+	
+  }
+  
+  .content {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	margin-bottom: 50px;
+
+	background-color: #f1f1f1;
   }
 
 
