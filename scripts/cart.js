@@ -41,6 +41,24 @@ var cart = {
       item = document.createElement("div");
       item.className = "p-item";
       cart.hPdt.appendChild(item);
+      
+      // PRODUCT NAME
+      part = document.createElement("li");
+      part.innerHTML = p.name;
+      part.className = "p-name";
+      item.appendChild(part);
+
+      // PRODUCT DESCRIPTION
+      part = document.createElement("li");
+      part.innerHTML = p.desc;
+      part.className = "p-desc";
+      item.appendChild(part);
+
+      // PRODUCT PRICE
+      part = document.createElement("li");
+      part.innerHTML = "p/m €" + p.price;
+      part.className = "p-price";
+      item.appendChild(part);
 
       // PRODUCT IMAGE
       part = document.createElement("img");
@@ -48,32 +66,18 @@ var cart = {
       part.className = "p-img";
       item.appendChild(part);
 
-      // PRODUCT NAME
-      part = document.createElement("div");
-      part.innerHTML = p.name;
-      part.className = "p-name";
-      item.appendChild(part);
+                  // ADD TO CART
+                  part = document.createElement("input");
+                  part.type = "button";
+                  part.value = "🗙";
+                  part.className = "cart p-add";
+                  part.onclick = cart.add;
+                  part.dataset.id = id;
+                  item.appendChild(part);
 
-      // PRODUCT DESCRIPTION
-      part = document.createElement("div");
-      part.innerHTML = p.desc;
-      part.className = "p-desc";
-      item.appendChild(part);
 
-      // PRODUCT PRICE
-      part = document.createElement("div");
-      part.innerHTML = "p/m €" + p.price;
-      part.className = "p-price";
-      item.appendChild(part);
 
-      // ADD TO CART
-      part = document.createElement("input");
-      part.type = "button";
-      part.value = "Toevoegen";
-      part.className = "cart p-add";
-      part.onclick = cart.add;
-      part.dataset.id = id;
-      item.appendChild(part);
+
     }
 
     // (C3) LOAD CART FROM PREVIOUS SESSION

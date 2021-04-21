@@ -206,6 +206,8 @@ margin-top: 5vh;
 			  width: 210vw;
 		  }
 
+		  
+
 
 
 .abbo, .abbo2 {
@@ -300,8 +302,7 @@ margin-top: 5vh;
 
 
 .navbar {
-	overflow: hidden;
-	background-color: white;
+
 	position: fixed;
 	top: 0;
 	width: 100%;
