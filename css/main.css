@@ -186,9 +186,7 @@ margin-top: 5vh;
 		  }
 	
 		  .p-item:hover {
-			  background-color: rgb(241, 255, 236);
-			transform: scale(1.1)	;	 
-			border-radius: 5px; }
+			transform: scale(1.1)	;	 }
 	
 		  .column p {
 			  font-size: 15px;
@@ -353,7 +351,6 @@ margin-top: 5vh;
 	border-radius: 50px;
 	text-align: center;
 	border: 5px solid white;
-	
   }
 
   .collapsible {

@@ -110,7 +110,11 @@ input.cart, button.cart {
   padding: 10px;
 }
 .p-item {
+
   text-align: center;
+  width: 64vw;
+  margin-left: -32vw;
+  padding: 35px;
 }
 .p-name {
   text-transform: uppercase;
@@ -132,7 +136,16 @@ input.cart, button.cart {
 /* (D) CURRENT SHOPPING CART */
 #cart-items {
   padding: 10px;
-  background: #f1f1f1;
+  padding-top: 10px;
+background: #f1f1f1;
+float: right;
+position: absolute;
+right: 0;
+border-radius: 10px;
+height: 100vh;
+z-index: -1;
+padding-top: 165px;
+width: 11vw;
 }
 .c-item {
   display: flex;
@@ -144,14 +157,39 @@ input.cart, button.cart {
   font-size: 1.3em;
   line-height: 1.5em;
 }
-.c-del { width: 20%; }
+.c-del { 
+  width: 7%;
+  font-weight: bold;
+  font-size: 1.5em !important;
+  padding: 15px 33px 15px 15px !important;
+  border: none;
+  color: #fff;
+  background: #d64107;
+  cursor: pointer;
+  position: relative !important;
+  transform: none !important;
+  border-radius: 50px;
+
+}
 .c-qty {
-  width: 75%;
+  width: 50%;
   font-size: 1em;
+  background-color: transparent;
+  border: none;
+  text-align: center;
 }
 input.c-empty, input.c-checkout {
-  width: 100%;
+  width: 90%;
   margin-top: 10px;
+  transform: none;
+  border-radius: 50px 0px 50px 50px;
+    font-size: 1.1em;
+  padding: 25px;
+  transition: 0.2s;
+}
+
+input.cart:hover, button.cart:hover {
+  transform: scale(1.05);
 }
 
 /* (E) RESPONSIVE */
