@@ -143,7 +143,6 @@ var cart = {
         total += subtotal;
       }
 
-      // EMPTY BUTTONS
       item = document.createElement("input");
       item.type = "button";
       item.value = "Leeg maken";
@@ -151,7 +150,6 @@ var cart = {
       item.className = "c-empty cart";
       cart.hItems.appendChild(item);
 
-      // CHECKOUT BUTTONS
       item = document.createElement("input");
       item.type = "button";
       item.value = "Verder" + "\n" + "Prijs p/m - " + "€" + total;
@@ -161,7 +159,6 @@ var cart = {
     }
   },
 
-  // (E) ADD ITEM INTO CART
   add : function () {
     if (cart.items[this.dataset.id] == undefined) {
       cart.items[this.dataset.id] = 1;
@@ -172,7 +169,6 @@ var cart = {
     cart.list();
   },
 
-  // (F) CHANGE QUANTITY
   change : function () {
     if (this.value == 0) {
       delete cart.items[this.dataset.id];
@@ -183,32 +179,15 @@ var cart = {
     cart.list();
   },
   
-  // (G) REMOVE ITEM FROM CART
   remove : function () {
     delete cart.items[this.dataset.id];
     cart.save();
     cart.list();
   },
   
-  // (H) CHECKOUT
   checkout : function () {
-    // SEND DATA TO SERVER
-    // CHECKS
-    // SEND AN EMAIL
-    // RECORD TO DATABASE
-    // PAYMENT
-    // WHATEVER IS REQUIRED
-    alert("TO DO");
 
-    /*
-    var data = new FormData();
-    data.append('cart', JSON.stringify(cart.items));
-    data.append('products', JSON.stringify(products));
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "SERVER-SCRIPT");
-    xhr.onload = function(){ ... };
-    xhr.send(data);
-    */
+    alert("TO DO");
   }
 };
 window.addEventListener("DOMContentLoaded", cart.init);

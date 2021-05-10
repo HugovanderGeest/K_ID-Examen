@@ -3,7 +3,7 @@ var products = {
   123: {
     name : "Plant ",
     desc : "beschrijving",
-    img : "logo.png",
+    img : "cactus.jpg",
     price : 111
   },
   124: {

@@ -16,6 +16,8 @@ input.cart, button.cart {
   position: absolute;
   transform: rotate(45deg);
   border-radius: 50px;
+  margin-top: 25px;
+  transition: 0.2s;
 }
 
 .glow-on-hover {
@@ -110,27 +112,42 @@ input.cart, button.cart {
   padding: 10px;
 }
 .p-item {
-
   text-align: center;
-  width: 64vw;
-  margin-left: -32vw;
-  padding: 35px;
+  width: 24vw;
+  padding: 60px;
+  margin-left: 100px;
+  list-style-type: none;
 }
 .p-name {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.1em;
+  float: left;
+  margin-right: -59px;
+  list-style-type: none;
+
 }
-.p-img { max-width: 180px; }
+.p-img { max-width: 180px;
+border-radius: 30px; }
+
+
 .p-desc {
   color: #777;
   font-size: 0.9em;
   line-height: 1.5em;
+  float: left;
+  margin-top: 100px;
 }
+
+
 .p-price {
   font-weight: bold;
   font-size: 1.1em;
-  margin: 10px 0;
+  margin: 40px 0;
+      margin-left: 0px;
+  float: left;
+  margin-left: -73px;
+  list-style-type: none;
 }
 
 /* (D) CURRENT SHOPPING CART */
@@ -190,6 +207,7 @@ input.c-empty, input.c-checkout {
 
 input.cart:hover, button.cart:hover {
   transform: scale(1.05);
+  transform: rotate(45deg);
 }
 
 /* (E) RESPONSIVE */
