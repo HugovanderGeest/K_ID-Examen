@@ -67,7 +67,6 @@ h2 {
 }
 
 h2:first-child {margin-top:0; 
-	margin-left: -137vw;
 	margin-bottom: 70px;
 }
 
@@ -374,8 +373,7 @@ border-radius: 20px 20px 0px 0px;  }
 	background-color: #d64107;
 	color: white;
 	cursor: pointer;
-	padding: 40px 40px 0px 40px;
-	width: 45%;
+	padding: 0px 40px 0px 40px;	
 	border: none;
 	outline: none;
 	font-size: 15px;
@@ -392,16 +390,18 @@ border-radius: 20px 20px 0px 0px;  }
   }
   
   .content {
-	padding: 0 18px;
+	padding: 40px 18px;
 	display: none;
 	overflow: hidden;
 	margin-bottom: 50px;
-
 	background-color: #f1f1f1;
+	position: absolute;
+	border-radius: 15px;
+	transition: 0.1s;
   }
 
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1100px) {
 
 	#transform {
 			margin-top: -130px;
@@ -427,6 +427,8 @@ margin-left: -95px;
 margin-top: -30vh;
 transform: scale(0.5);
 margin-bottom: -20px;
+margin-top: -224px;
+
 	}
 
 	#intro img {
@@ -444,8 +446,21 @@ margin-bottom: -20px;
 	}
 
 	.abbo2 .img2  {
-		max-width: 28vw;
-		opacity: 0.5;
+		max-width: 11vw;
+		float: right;
+		margin-top: -22vh;
+		background: #d64107;
+		padding: 19px;
+		border-radius: 31px;
+		max-width: 22vw;
+opacity: 0.5;
+	}
+
+	.abbo2 {
+		margin-bottom: 20px;
+border-radius: 35px;
+width: 100vw;
+margin-left: -16vw;
 	}
 
 	.drop, .drop i {
@@ -462,7 +477,17 @@ margin-bottom: -20px;
 
 	.p-name {
 		font-size: 2em !important;
+		font-size: 2em;
 		margin-top: 15px !important;
+	}
+
+	.kruis {
+		padding: 10px;
+		margin-top: 0px;
+	}
+
+	.padd {
+		margin-left: 30px;
 	}
 
 	.p-desc {
@@ -470,9 +495,15 @@ margin-bottom: -20px;
 		font-size: 1.4em !important;
 	}
 
-	.column {
+	#easing {
+		top: 0%;
+		display: grid;
+grid-template-columns: 1fr 1fr;
+	}
 
-		  }
+	.collapsible {
+		width: 100%;
+	}
 
 	  #intro i {
 		position: absolute;
@@ -489,6 +520,14 @@ margin-bottom: -20px;
 		margin-right: 0;
 	}
 
+	.abonnementen {
+		position: absolute;
+		top: -13vh;
+		width: 80vw !important;
+		left: -4vw;
+	}
+
+
 	
 h2:first-child {
 	margin-top: 35px;
@@ -501,7 +540,7 @@ h2:first-child {
 	padding: 27px;
 	color: white;
 	padding: 20px;
-	border-radius: 0px 0px 20px 20px;
+	border-radius: 20px;
 }
 
 
