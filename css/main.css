@@ -205,37 +205,59 @@ margin-top: 5vh;
 		  
 
 
-
 .abbo, .abbo2 {
-	padding: 3vw;
 	background-color: white;
 	transition: 0.2s;
 }
 
 .abbo2 {
-	background-color: rgb(235, 232, 232);
+		margin-bottom: 20px;
+	border-radius: 35px;
+	width:80%
+
 }
 
 .abbo2:hover, .abbo:hover {
-	background-color: rgb(241, 255, 236);
 	transform: scale(1.05);
 }
 
-.abbo .img1, .img3 {
-	max-width: 6vw;
-	float: left;
-	margin-top: -12vh;
-}
 
 .abbo2 .img2 {
-	max-width: 6vw;
+	max-width: 11vw;
 	float: right;
-	margin-top: -12vh;
+	margin-top: -23vh;
+	background: #d64107;
+	padding: 22px;
+	border-radius: 30px;
+}
+
+.kruis {
+	font-weight: bold;
+font-size: 3em;
+float: left;
+padding: 40px 47px 40px 47px;
+border: none;
+color: #fff;
+background: #d64107;
+cursor: pointer;
+transform: rotate(45deg);
+border-radius: 40px;
+transition: 0.2s;
+margin-top: 4vh;
+margin-left: 3vw;
+
+}
+
+.padd {
+	padding: 2vw;
+	width: 80%;
+	margin-left: 77px;
 }
 
 #properties {
 	width:80vw;
 	margin: 10vw;
+	margin-left: 17vw;
 	margin-top: -100px;
 
 	height:100%;
@@ -343,19 +365,16 @@ margin-top: 5vh;
   }
 
   .downer {
-	position: absolute;
-	background-color: #d64107;
-	padding: 10px;
-	border-radius: 50px;
-	text-align: center;
-	border: 5px solid white;
-  }
+background-color: white;
+color: #d64107;
+padding: 10px;
+border-radius: 20px 20px 0px 0px;  }
 
   .collapsible {
 	background-color: #d64107;
 	color: white;
 	cursor: pointer;
-	padding: 40px;
+	padding: 40px 40px 0px 40px;
 	width: 45%;
 	border: none;
 	outline: none;
@@ -391,17 +410,37 @@ margin-top: 5vh;
 	}
 
 	#transform img {
-	max-width: 30vh;
+	max-width: 25vh;
+	}
+
+	.navbar {
+		display: none;
+	}
+
+	.p-item {
+		text-align: center;
+width: 24vw;
+padding: 40px !important;
+margin-left: 100px;
+list-style-type: none;
+margin-left: -95px;
+margin-top: -30vh;
+transform: scale(0.5);
+margin-bottom: -20px;
 	}
 
 	#intro img {
 		max-width: 50vw;
-		margin-top: 15vh;
+		margin-top: 25vh;
 	}
 
 	.abbo .img1, .img3  {
 		max-width: 28vw;
 		opacity: 0.5;
+	}
+
+	.row {
+		margin-top: 30px;
 	}
 
 	.abbo2 .img2  {
@@ -414,16 +453,26 @@ margin-top: 5vh;
 
 	}
 
-	.drop i {display: none;}
-	
+	.p-price {
+		font-weight: bold !important;
+		font-size: 2.1em !important;
+		margin: 0px !important;
+		text-align: center;
+	}
+
+	.p-name {
+		font-size: 2em !important;
+		margin-top: 15px !important;
+	}
+
+	.p-desc {
+		margin-top: 0px !important;
+		font-size: 1.4em !important;
+	}
+
 	.column {
-		float: left;
-		margin: 0;
-		background-color: white;
-		transition: 0.2s;
-		width: 100vw !important;
-		margin-left: -28vw !important;
-	  }
+
+		  }
 
 	  #intro i {
 		position: absolute;
@@ -439,5 +488,21 @@ margin-top: 5vh;
 		margin-left: 0;
 		margin-right: 0;
 	}
+
+	
+h2:first-child {
+	margin-top: 35px;
+	margin-left: 0px;
+	margin-bottom: -40px;
+	font-size: 1em;
+	text-align: center;
+	background-color: #d64107;
+	width: 100vw;
+	padding: 27px;
+	color: white;
+	padding: 20px;
+	border-radius: 0px 0px 20px 20px;
+}
+
 
 	}
