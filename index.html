@@ -4,7 +4,10 @@
 	<meta charset="utf-8">
 	<script src="https://kit.fontawesome.com/fcbe50c4ec.js" crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+	<link
+	href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Fredoka+One&family=Pacifico&display=swap"
+	rel="stylesheet"
+  />
 	<title>Planto</title>
 
 	<link href="css/fixed-positioning.css" rel="stylesheet" type="text/css" />
@@ -13,11 +16,12 @@
 
 <body>
 
+
+
+
 	<div class="navbar">
 		<div class="maxw">
-		<a href="#home">Home</a>
-		<a href="#news">Winkelmantje</a>
-		<a href="#contact">Contact</a>
+
 		<button class="shop" onclick="winkelwagen()"><i  class="fas fa-shopping-cart"></i></button>
 	
 		<div id="myDIV">
@@ -36,11 +40,18 @@
 	<div id="intro" data-0="opacity:1;top:3%;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:-5%;transform:rotate(0deg);">
 		<img src="images/logo.png" alt="logofoto">
 		<h2>Jouw nieuwe plant abonnement</h2>
-		<h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap</h4>
+		<h4 class="titeltekst">Op zoek naar een nieuwe stukje natuur in je huis, zoek niet verder! planto levert elke maand een nieuwe plant voor je deur, van groot tot klein van 1 tot 100!</h4>
 
-
-		<button class="glow-on-hover" type="button">🠋</button>
-
+	<button class="glow-on-hover" type="button">
+		<figure>
+			<figcaption >Start het avondtuur</figcaption>
+			<audio 
+				controls autoplay
+				src="images/jungel.mp3">
+					Your browser does not support the
+					<code>audio</code> element.
+			</audio>
+		</figure></button>
 
 
 
@@ -124,7 +135,16 @@
 
 		</div>
 
-		<a><div class="drop" data-4500="bottom[quadratic]:-50%;" data-5500="bottom:-20%;">Naar winkelmantje<br><i class="fas fa-shopping-cart"></i></div></a>
+		<a><div class="drop" data-4500="bottom[quadratic]:-50%;" data-5500="bottom:-20%;">
+
+
+		
+		<li>Wettelijke bepalingen</li>
+		<li>Cookievoorkeuren</li>
+		<li>Privacy</li>
+	    <li>Tel: 0800-022-9647</li>
+		<li>Mail: info@planto.com</li>
+		<i class="fab fa-instagram"></i><i class="fab fa-facebook"></i><i class="fab fa-twitter-square"></i></div></a>
 
 	</div>
 
@@ -170,6 +190,7 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
 
 	</script>
 </body>

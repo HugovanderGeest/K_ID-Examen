@@ -31,7 +31,7 @@ input.cart, button.cart {
   font-size: 50px;
   margin-top: 50px;
   width: 100vw;
-  height: 20vh;
+  height: 30vh;
 }
 
 
@@ -94,6 +94,7 @@ input.cart, button.cart {
   left: 0;
   top: 0;
   border-radius: 10px;
+  
 }
 
 @keyframes glowing {
@@ -114,7 +115,7 @@ input.cart, button.cart {
 .p-item {
   text-align: center;
   width: 24vw;
-  padding: 60px;
+  padding: 20px;
   margin-left: 100px;
   list-style-type: none;
 }
@@ -141,13 +142,13 @@ border-radius: 30px; }
 
 
 .p-price {
-  font-weight: bold;
-  font-size: 1.1em;
-  margin: 40px 0;
-      margin-left: 0px;
-  float: left;
-  margin-left: -73px;
+
   list-style-type: none;
+  padding: 10px;
+  margin: 10px !important;
+  background-color: #26a66b;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 /* (D) CURRENT SHOPPING CART */
@@ -219,8 +220,7 @@ input.cart:hover, button.cart:hover {
     grid-gap: 10px;
     padding: 10px;
     margin-left: -180px; 
-    margin-top: 150px;
-  }
+    margin-top: 330px;  }
 }
 
 

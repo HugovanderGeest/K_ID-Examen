@@ -9,6 +9,8 @@ html, body, div, span, p, a, del, em, img, ol, ul, li, fieldset, form, label {
 
 * {
 	box-sizing: border-box;
+	font-family: "Didact Gothic", sans-serif;
+
   }
 
 article, aside, details, figcaption, figure,
@@ -66,7 +68,7 @@ h2 {
 	margin:2em 0 1em 0;
 }
 
-h2:first-child {margin-top:0; 
+h2:first-child {margin-top: -100px; 
 	margin-bottom: 70px;
 }
 
@@ -87,6 +89,10 @@ h4 {
 	background:#444;
 	bottom:0;
 	z-index:200;
+}
+
+.titeltekst {
+margin: 0px 200px 0px 200px;
 }
 
 #scrollbar {
@@ -165,6 +171,7 @@ margin-top: 5vh;
 	font-size:100%;
 	margin-top: 10px;
 }
+
 
 
 
@@ -282,8 +289,7 @@ margin-left: 3vw;
 .drop {
 	background: rgb(235, 232, 232);
 	font-weight:bold;
-	font-size: 5vw;
-	padding:1em;
+	font-size: 1.5vw;	padding: 1em;
 	text-align: center;
 	float: left;
 	width: 100vw;
@@ -400,11 +406,33 @@ border-radius: 20px 20px 0px 0px;  }
 	transition: 0.1s;
   }
 
+  .p-price {
+	font-weight: bold;
+    font-size: 1.1em;
+	margin: 40px 0 !important; 
+    margin-left: 0px;
+    float: none !important;
+    margin-left: -73px;
+    list-style-type: none;
+}
+  
+.p-desc {
+	margin-top: 0px !important;
+}
+
+.p-name {
+	font-family: "Pacifico", cursive;
+	background-color: #d64107;
+	padding: 20px;
+	color: white;
+	border-radius: 15px;
+}
+
 
   @media only screen and (max-width: 1100px) {
 
 	#transform {
-			margin-top: -130px;
+			margin-top: -260px;
 			margin-right: 10vw;
 			float: right;
 	}
@@ -421,14 +449,14 @@ border-radius: 20px 20px 0px 0px;  }
 		text-align: center;
 width: 24vw;
 padding: 40px !important;
-margin-left: 100px;
+margin-left: 110px;
 list-style-type: none;
 margin-left: -95px;
 margin-top: -30vh;
 transform: scale(0.5);
 margin-bottom: -20px;
-margin-top: -224px;
-
+margin-top: -360px;
+margin-bottom: 10px;
 	}
 
 	#intro img {
@@ -463,22 +491,24 @@ width: 100vw;
 margin-left: -16vw;
 	}
 
-	.drop, .drop i {
-		font-size: 10vw;
 
-	}
 
 	.p-price {
 		font-weight: bold !important;
 		font-size: 2.1em !important;
 		margin: 0px !important;
 		text-align: center;
+		background-color: transparent !important;
+		position: absolute;
+		left: 270px;
 	}
 
 	.p-name {
 		font-size: 2em !important;
 		font-size: 2em;
 		margin-top: 15px !important;
+		font-family: "Pacifico", cursive;
+
 	}
 
 	.kruis {
@@ -493,6 +523,7 @@ margin-left: -16vw;
 	.p-desc {
 		margin-top: 0px !important;
 		font-size: 1.4em !important;
+		width: 100vw;
 	}
 
 	#easing {
@@ -503,6 +534,7 @@ grid-template-columns: 1fr 1fr;
 
 	.collapsible {
 		width: 100%;
+		font-size: 21px;
 	}
 
 	  #intro i {
@@ -520,24 +552,48 @@ grid-template-columns: 1fr 1fr;
 		margin-right: 0;
 	}
 
+	#intro img {
+		margin-top: 8vh;
+		margin-bottom: -58px;
+	}
+
 	.abonnementen {
 		position: absolute;
-		top: -13vh;
+		top: -26vh;
 		width: 80vw !important;
 		left: -4vw;
 	}
 
+	.content {
+	padding: 40px 18px;
+	display: none;
+	overflow: hidden;
+	margin-bottom: 50px;
+	background-color: #f1f1f1;
+	position: absolute;
+	border-radius: 15px;
+	transition: 0.1s;
+	bottom: -270px;
+	width: 100vw;
+	left: -57px; }
+
+	.titeltekst {
+		margin: 0px 10px 0px 10px;
+		
+	}
+
+	
+
 
 	
 h2:first-child {
-	margin-top: 35px;
+	margin-top: 160px;
 	margin-left: 0px;
-	margin-bottom: -40px;
+	margin-bottom: -176px;
 	font-size: 1em;
 	text-align: center;
 	background-color: #d64107;
 	width: 100vw;
-	padding: 27px;
 	color: white;
 	padding: 20px;
 	border-radius: 20px;
