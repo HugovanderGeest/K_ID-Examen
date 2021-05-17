@@ -3,7 +3,7 @@ var products = {
   123: {
     name : "Bamboe ",
     desc : "Bamboe is een inheemse plant in Azië, China, Japan, Midden- en Zuid -Amerika, Afrika en in Australië",
-    img : "bamboe.jpg",
+    img : "Bamboe.jpg",
     price : 39
   },
   124: {
@@ -21,7 +21,7 @@ var products = {
   126: {
     name : "Cactus ",
     desc : "Succulenten (ook wel vetplanten genoemd) komen in grote delen van de wereld voor",
-    img : "Cactus.jpg",
+    img : "cactus.jpg",
     price : 10
   },
   127: {
