@@ -21,9 +21,16 @@ overflow: hidden;
     margin-right: auto 
 }
 
+.betaalwijze {
+
+    border: 1px solid transparent;
+    font-size: 20px;
+}
+
 
 .stuurop {
     border: none;
+
     background-color: #d64107;
     color: white;
     padding: 15px 80px;
@@ -114,7 +121,7 @@ h2.actief {
 
 
 
-input[type=button], input[type=submit], input[type=reset]  {
+input[type=button], input[type=submit], input[type=reset]   {
   border: none;
   background-color: #d64107;
   color: white;
@@ -148,7 +155,7 @@ input[type=button]:actief, input[type=submit]:actief, input[type=reset]:actief  
   transform: scale(0.95);
 }
 
-input[type=text] {
+input[type=text], input[type=date] {
   background-color: #f6f6f6;
   border: none;
   color: #0d0d0d;
