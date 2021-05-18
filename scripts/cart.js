@@ -187,7 +187,7 @@ var cart = {
   
   checkout : function () {
 
-    alert("TO DO");
+    window.location.href='paginas/login.html';
   }
 };
 window.addEventListener("DOMContentLoaded", cart.init);
