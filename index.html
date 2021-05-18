@@ -19,9 +19,9 @@
 	<div class="navbar">
 		<div class="maxw">
 
-		<button class="shop" onclick="winkelwagen()"><i  class="fas fa-shopping-cart"></i></button>
+		<button class="shop"  onclick="winkelwagen()"><i  class="fas fa-shopping-cart"></i></button>
 	
-		<div id="myDIV">
+		<div style="display:none" id="myDIV">
 			<div id="cart-items"></div>
 
 		</div>
@@ -64,7 +64,7 @@
     <div id="cart-wrap">
 	  		<div class="row">
 				<div class="column">
-      <div id="cart-products"></div></div></div>
+      <div  id="cart-products"></div></div></div>
 
     </div>
 	</div>
@@ -73,13 +73,14 @@
 
 	<div id="properties" data-1700="top:100%;" data-2200="top:0%;" data-3000="display:block;" data-3700="top:-100%;display:none;">
 
-		<h2 class="abonnementen">abonnementen</h2>
+		<h3 class="abonnementen"> Maak het een verrassing! Krijg elke maand met betrekking <br>tot het seizoen een plantje van een willekeurige categorie!
+		</h3>
 
 		<div class="abbo2">
 			<i class="fa fa-times kruis" aria-hidden="true"></i>
 			<div class="padd">
 			<h3>Basic</h3>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p></div>
+			<p>Houw het lekker simpel, elke maand 1 plant is meer dan genoeg</p><p><b> p/m €8 </b></p></div>
 				<img class="img2" src="images/logo.png" alt="Forest" >
 		</div>
 
@@ -87,7 +88,7 @@
 			<i class="fa fa-times kruis" aria-hidden="true"></i>
 			<div class="padd">
 			<h3>Standaard (populier)</h3>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p></div>
+			<p>Plantje hier plantje daar, mooi zo bij elkaar. 2 tot 3 planten per maand is altijd mooi<p><b> p/m €12 </b></p></div>
 		<img class="img2" src="images/logo.png" alt="Forest" >
 		</div>
 
@@ -95,7 +96,7 @@
 			<i class="fa fa-times kruis" aria-hidden="true"></i>
 <div class="padd">
 			<h3>Premium</h3>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p></div>
+			<p>Zij iemand groenen vingers?, kom maar door 3 tot 5 planten per maand is (bijna) niet genoeg<p><b> p/m €20 </b></p></div>
 			<img class="img2" src="images/logo.png" alt="Forest" >
 		</div>
 
@@ -103,6 +104,8 @@
 
 	<div id="easing_wrapper" data-0="display:none;" data-1900="display:block;" data-2900="background:rgba(0, 0, 0, 0);color[swing]:rgb(0, 0 ,0);" data-3900="background:rgba(255, 255 ,255 ,1);color:rgb(0,0,0);" data-8000="top:0%;" data-10000="top:0%;">
 		<div id="easing" data-3900="left:100%" data-4600="left:15%;">
+
+			<h3 class="QA">Q&A</h3>
 
 			<button type="button" class="collapsible">Open Section 1<br><br><span class="downer">🢃</span></button>
 			<div class="content">
@@ -180,10 +183,10 @@ for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
+    if (content.style.display === "none") {
       content.style.display = "block";
+    } else {
+      content.style.display = "none";
     }
   });
 }

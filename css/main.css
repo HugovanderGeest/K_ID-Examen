@@ -68,8 +68,15 @@ h2 {
 	margin:2em 0 1em 0;
 }
 
-h2:first-child {margin-top: -100px; 
-	margin-bottom: 70px;
+h2:first-child {
+	font-size: 2em;
+	text-align: center;
+	background-color: #d64107;
+	width: 100vw;
+	color: white;
+	padding: 20px;
+	border-radius: 20px;
+	margin-top: -27px;
 }
 
 h3 {
@@ -89,6 +96,19 @@ h4 {
 	background:#444;
 	bottom:0;
 	z-index:200;
+}
+
+
+.abonnementen {
+	font-size: 2em;
+	text-align: center;
+	background-color: #d64107;
+	width: 60vw;
+	color: white;
+	padding: 20px;
+	border-radius: 20px;
+	margin-top: -27px;
+	margin-left: 4vw;
 }
 
 .titeltekst {
@@ -282,7 +302,7 @@ margin-left: 3vw;
 
 #easing {
 	top:10%;
-	width:50%;
+	width:70vw;
 	z-index:101;
 }
 
@@ -379,7 +399,7 @@ border-radius: 20px 20px 0px 0px;  }
 	background-color: #d64107;
 	color: white;
 	cursor: pointer;
-	padding: 0px 40px 0px 40px;	
+	padding: 0px 40px 0px 40px;
 	border: none;
 	outline: none;
 	font-size: 15px;
@@ -388,6 +408,7 @@ border-radius: 20px 20px 0px 0px;  }
 	transition: 0.2s;
 	font-size: 30px;
 	margin-top: 30px;
+	width: 23vw;
   }
   
   .active, .collapsible:hover {
@@ -441,9 +462,10 @@ border-radius: 20px 20px 0px 0px;  }
 	max-width: 25vh;
 	}
 
-	.navbar {
-		display: none;
+	#cart-items {
+		width: 100vw !important;
 	}
+
 
 	.p-item {
 		text-align: center;
@@ -511,6 +533,16 @@ margin-left: -16vw;
 
 	}
 
+	.drop {
+		font-size: 5.5vw;
+
+	}
+
+	.drop i {
+		margin-top: 3vh !important;
+		font-size: 12vw;
+	}
+
 	.kruis {
 		padding: 10px;
 		margin-top: 0px;
@@ -527,6 +559,7 @@ margin-left: -16vw;
 	}
 
 	#easing {
+		margin-top: 100px;
 		top: 0%;
 		display: grid;
 grid-template-columns: 1fr 1fr;
@@ -544,7 +577,7 @@ grid-template-columns: 1fr 1fr;
 	}
 
 	#properties {
-		margin-top: 10vh;
+		margin-top: 20vh;
 	}
 
 	.maxw {
@@ -558,11 +591,26 @@ grid-template-columns: 1fr 1fr;
 	}
 
 	.abonnementen {
-		position: absolute;
-		top: -26vh;
-		width: 80vw !important;
-		left: -4vw;
+		font-size: 1em;
+		text-align: center;
+		background-color: #d64107;
+		width: 100vw;
+		color: white;
+		padding: 21px;
+		border-radius: 20px;
+		margin-top: -83px;
+		margin-left: -17vw;
 	}
+
+	.QA {
+		position: absolute;
+		background-color: #d64107;
+		padding: 21px;
+		border-radius: 20px;
+		margin-top: -70px;
+		color: white;
+	}
+	
 
 	.content {
 	padding: 40px 18px;
