@@ -13,12 +13,15 @@ body {
 grid-template-columns: 1fr 1fr ;
 }
 
-.een, .twee {
-
+.logoboven {
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
 }
 
 a {
-  color: #92badd;
+  color: #d64107;
   display:inline-block;
   text-decoration: none;
   font-weight: 400;
@@ -64,7 +67,7 @@ h2 {
 
 #formFooter {
   background-color: #f6f6f6;
-  border-top: 1px solid #dce8f1;
+  border-top: 1px solid #f1e4dc;
   padding: 25px;
   text-align: center;
   -webkit-border-radius: 0 0 10px 10px;
@@ -110,7 +113,7 @@ input[type=button], input[type=submit], input[type=reset]  {
 }
 
 input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
-  background-color: #39ace7;
+  background-color: #26a66b;
 }
 
 input[type=button]:actief, input[type=submit]:actief, input[type=reset]:actief  {
