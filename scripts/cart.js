@@ -1,23 +1,21 @@
 var cart = {
-  // (A) PROPERTIES
-  hPdt : null, // HTML products list
-  hItems : null, // HTML current cart
-  items : {}, // Current items in cart
 
-  // (B) LOCALSTORAGE CART
-  // (B1) SAVE CURRENT CART INTO LOCALSTORAGE
+  hPdt : null,
+  hItems : null, 
+  items : {},
+
+
   save : function () {
     localStorage.setItem("cart", JSON.stringify(cart.items));
   },
 
-  // (B2) LOAD CART FROM LOCALSTORAGE
+
   load : function () {
     cart.items = localStorage.getItem("cart");
     if (cart.items == null) { cart.items = {}; }
     else { cart.items = JSON.parse(cart.items); }
   },
 
-  // (B3) EMPTY ENTIRE CART
   nuke : function () {
     if (confirm("Empty cart?")) {
       cart.items = {};
@@ -26,47 +24,39 @@ var cart = {
     }
   },
 
-  // (C) INITIALIZE
   init : function () {
-    // (C1) GET HTML ELEMENTS
+
     cart.hPdt = document.getElementById("cart-products");
     cart.hItems = document.getElementById("cart-items");
 
-    // (C2) DRAW PRODUCTS LIST
     cart.hPdt.innerHTML = "";
     let p, item, part;
     for (let id in products) {
-      // WRAPPER
       p = products[id];
       item = document.createElement("div");
       item.className = "p-item";
       cart.hPdt.appendChild(item);
       
-      // PRODUCT NAME
       part = document.createElement("li");
       part.innerHTML = p.name;
       part.className = "p-name";
       item.appendChild(part);
 
-      // PRODUCT DESCRIPTION
       part = document.createElement("li");
       part.innerHTML = p.desc;
       part.className = "p-desc";
       item.appendChild(part);
 
-      // PRODUCT PRICE
       part = document.createElement("li");
       part.innerHTML = "p/m €" + p.price;
       part.className = "p-price";
       item.appendChild(part);
 
-      // PRODUCT IMAGE
       part = document.createElement("img");
       part.src = "images/" +p.img;
       part.className = "p-img";
       item.appendChild(part);
 
-                  // ADD TO CART
                   part = document.createElement("input");
                   part.type = "button";
                   part.value = "🗙";
@@ -80,16 +70,12 @@ var cart = {
 
     }
 
-    // (C3) LOAD CART FROM PREVIOUS SESSION
     cart.load();
 
-    // (C4) LIST CURRENT CART ITEMS
     cart.list();
   },
 
-  // (D) LIST CURRENT CART ITEMS (IN HTML)
   list : function () {
-    // (D1) RESET
     cart.hItems.innerHTML = "";
     let item, part, pdt;
     let empty = true;
@@ -97,30 +83,25 @@ var cart = {
       if(cart.items.hasOwnProperty(key)) { empty = false; break; }
     }
 
-    // (D2) CART IS EMPTY
     if (empty) {
       item = document.createElement("div");
       item.innerHTML = "Wagentje leeg";
       cart.hItems.appendChild(item);
     }
 
-    // (D3) CART IS NOT EMPTY - LIST ITEMS
     else {
       let p, total = 0, subtotal = 0;
       for (let id in cart.items) {
-        // ITEM
         p = products[id];
         item = document.createElement("div");
         item.className = "c-item";
         cart.hItems.appendChild(item);
 
-        // NAME
         part = document.createElement("div");
         part.innerHTML = p.name;
         part.className = "c-name";
         item.appendChild(part);
 
-        // REMOVE
         part = document.createElement("input");
         part.type = "button";
         part.value = "X";
@@ -129,7 +110,6 @@ var cart = {
         part.addEventListener("click", cart.remove);
         item.appendChild(part);
 
-        // QUANTITY
         part = document.createElement("input");
         part.type = "number";
         part.value = cart.items[id];
@@ -138,7 +118,6 @@ var cart = {
         part.addEventListener("change", cart.change);
         item.appendChild(part);
 
-        // SUBTOTAL
         subtotal = cart.items[id] * p.price;
         total += subtotal;
       }
