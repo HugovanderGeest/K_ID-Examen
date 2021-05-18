@@ -76,7 +76,11 @@ h2:first-child {
 	color: white;
 	padding: 20px;
 	border-radius: 20px;
-	margin-top: -27px;
+	margin-top: -75px;
+}
+
+.white {
+	color: white;
 }
 
 h3 {
@@ -210,8 +214,6 @@ margin-top: 5vh;
 			  transition: 0.2s;
 		  }
 	
-		  .p-item:hover {
-			transform: scale(1.1)	;	 }
 	
 		  .column p {
 			  font-size: 15px;
@@ -231,16 +233,21 @@ margin-top: 5vh;
 		  
 
 
-.abbo, .abbo2 {
+ .abbo2 {
 	background-color: white;
 	transition: 0.2s;
+}
+
+.abbo {
+	background-color: #d64107;
+	color: white;
 }
 
 .abbo2 {
 		margin-bottom: 20px;
 	border-radius: 35px;
-	width:80%
-
+	width:80%;
+	height: 20vh;
 }
 
 .abbo2:hover, .abbo:hover {
@@ -269,15 +276,20 @@ cursor: pointer;
 transform: rotate(45deg);
 border-radius: 40px;
 transition: 0.2s;
-margin-top: 4vh;
+margin-top: 3vh;
 margin-left: 3vw;
+}
 
+.kruis2 {
+	background: white;
+	color: #d64107;
 }
 
 .padd {
-	padding: 2vw;
+	padding: 1vw;
 	width: 80%;
-	margin-left: 77px;
+	margin-left: 175px;
+
 }
 
 #properties {
@@ -313,7 +325,7 @@ margin-left: 3vw;
 	text-align: center;
 	float: left;
 	width: 100vw;
-	height: 50vh;
+	height: 53vh;
 }
 
 .drop i{
@@ -399,16 +411,17 @@ border-radius: 20px 20px 0px 0px;  }
 	background-color: #d64107;
 	color: white;
 	cursor: pointer;
-	padding: 0px 40px 0px 40px;
 	border: none;
 	outline: none;
 	font-size: 15px;
 	text-align: center;
-	border-radius: 20px;
+	border-radius: 15px 15px 0px 0px;
 	transition: 0.2s;
 	font-size: 30px;
 	margin-top: 30px;
 	width: 23vw;
+border: 5px solid white;
+
   }
   
   .active, .collapsible:hover {
@@ -419,12 +432,15 @@ border-radius: 20px 20px 0px 0px;  }
   .content {
 	padding: 40px 18px;
 	display: none;
-	overflow: hidden;
+	overflow-x: hidden;
 	margin-bottom: 50px;
-	background-color: #f1f1f1;
+	background-color: white;
 	position: absolute;
-	border-radius: 15px;
+	border-radius: 0px 0px 15px 15px;
 	transition: 0.1s;
+	border-bottom: 10px solid #d64107;
+	border-left: 10px solid #d64107;
+	border-right: 10px solid #d64107;
   }
 
   .p-price {
@@ -464,6 +480,11 @@ border-radius: 20px 20px 0px 0px;  }
 
 	#cart-items {
 		width: 100vw !important;
+	}
+
+	.checkmark {
+		font-size: 12px;	
+		color: gray;
 	}
 
 
@@ -533,15 +554,12 @@ margin-left: -16vw;
 
 	}
 
-	.drop {
-		font-size: 5.5vw;
 
-	}
 
-	.drop i {
-		margin-top: 3vh !important;
-		font-size: 12vw;
+	.drop  {
+display: none;
 	}
+	
 
 	.kruis {
 		padding: 10px;
@@ -590,6 +608,7 @@ grid-template-columns: 1fr 1fr;
 		margin-bottom: -58px;
 	}
 
+
 	.abonnementen {
 		font-size: 1em;
 		text-align: center;
@@ -615,13 +634,13 @@ grid-template-columns: 1fr 1fr;
 	.content {
 	padding: 40px 18px;
 	display: none;
-	overflow: hidden;
+	overflow-x: hidden;
 	margin-bottom: 50px;
 	background-color: #f1f1f1;
 	position: absolute;
 	border-radius: 15px;
 	transition: 0.1s;
-	bottom: -270px;
+	bottom: -230px;
 	width: 100vw;
 	left: -57px; }
 
@@ -636,7 +655,7 @@ grid-template-columns: 1fr 1fr;
 	
 h2:first-child {
 	margin-top: 160px;
-	margin-left: 0px;
+	margin-left: -60px;
 	margin-bottom: -176px;
 	font-size: 1em;
 	text-align: center;

@@ -5,7 +5,7 @@
   grid-template-columns: 70% 30%;
   margin: 0 auto;
 }
-input.cart, button.cart {
+input.cart {
   font-weight: bold;
   font-size: 3em;
   padding: 40px 47px 47px 47px;
@@ -17,7 +17,11 @@ input.cart, button.cart {
   transform: rotate(45deg);
   border-radius: 50px;
   margin-top: 25px;
-  transition: 0.2s;
+  transition: 0.2s; 
+}
+
+button.cart {
+  background: #711b86;
 }
 
 .glow-on-hover {
@@ -175,14 +179,16 @@ width: 11vw;
   font-size: 1.3em;
   line-height: 1.5em;
 }
+
 .c-del { 
   width: 7%;
+  margin-top: 100px;
   font-weight: bold;
   font-size: 1.5em !important;
   padding: 15px 33px 15px 15px !important;
   border: none;
   color: #fff;
-  background: #d64107;
+  background: red;
   cursor: pointer;
   position: relative !important;
   transform: none !important;
@@ -196,15 +202,30 @@ width: 11vw;
   border: none;
   text-align: center;
 }
-input.c-empty, input.c-checkout {
+
+
+input.c-empty {
   width: 90%;
   margin-top: 10px;
+  transform: none;
+  border-radius: 15px;
+    font-size: 1.1em;
+    background-color: red;
+  padding: 25px;
+  transition: 0.2s;
+  margin-top: 150px;
+
+}
+
+input.c-checkout {
+  width: 90%;
   transform: none;
   border-radius: 50px 0px 50px 50px;
     font-size: 1.1em;
   padding: 25px;
   transition: 0.2s;
 }
+
 
 input.cart:hover, button.cart:hover {
   transform: scale(1.05);

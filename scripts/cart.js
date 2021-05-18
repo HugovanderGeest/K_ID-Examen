@@ -145,7 +145,7 @@ var cart = {
 
       item = document.createElement("input");
       item.type = "button";
-      item.value = "Leeg maken";
+      item.value = "verwijder alles";
       item.addEventListener("click", cart.nuke);
       item.className = "c-empty cart";
       cart.hItems.appendChild(item);
